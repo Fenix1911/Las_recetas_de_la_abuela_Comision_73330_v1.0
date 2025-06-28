@@ -1,0 +1,94 @@
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    footer .icono{
+        text-align: center;
+        margin:auto;
+    }
+
+    #contenedorReceta {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        height: auto;
+        gap: 20px;
+        justify-items: center;
+        align-items: center;
+    }
+    .contenedorForm {
+        width: 90vw;
+        height: auto;
+        padding: 20px;
+    }
+    input[type="submit"] {
+        height: 12vw;
+        width: 20vw;
+    }
+
+    #bienvenidos {
+        width: 110vw;
+        height: auto;
+        padding: 20px;
+        grid-template-areas: 
+            "titulo"
+            "parrafo"
+            "parrafo2";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        
+    }
+
+    .titulo {
+        font-size: 2vw;
+        margin-top: 10px;
+    }
+
+    .parrafo, .parrafo2 {
+        font-size: 2vw;
+        margin: 10px;
+    }
+
+    .pasos, .ingredientes {
+        font-size: 2vw;
+        margin: 10px;
+        
+    }
+    .ingredientes, .pasos {
+        width: 90vw;
+    }
+    .descripcion {
+        font-size: 2vw;
+        width: 80vw;
+        padding: 3px;
+    }
+
+    #contenedorReceta {
+        gap: 2px;
+        height: fit-content;
+        width: 110vw;
+        padding: 5px;
+    }
+
+    .contenedorForm{
+        width: 90vw;
+        height: 100vw;
+        padding: 20px;
+    }
+    textarea {
+        width: 60vw;
+        height: 20vw;
+    }
+
+    .datosPersonales {
+        font-size: 5vw;
+        margin-bottom: 10px;
+    }
+    #contacto {
+        font-size: 5vw;
+        margin-bottom: 20px;
+    }
+}

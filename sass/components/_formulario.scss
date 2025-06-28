@@ -1,0 +1,54 @@
+.contenedorForm{
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    overflow: auto;
+}
+
+#contacto{
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 2vw;
+    margin-bottom: 20px;    
+}
+
+.datosPersonales{
+    font-size: 1.5vw;
+    margin-bottom: 10px;
+}
+
+input{
+    width: 20vw;
+    height: 3vw;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"]{
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 10vw;
+}
+
+input[type="submit"]:hover{
+    background-color: #45a049;
+}
+
+textarea{
+    width: 20vw;
+    height: 10vw;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: none;
+}

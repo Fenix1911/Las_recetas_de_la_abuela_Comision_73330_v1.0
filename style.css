@@ -1,0 +1,508 @@
+nav.bg-body-tertiary {
+  z-index: 10000;
+  background-color: beige !important;
+}
+
+.navbar-brand {
+  font-size: 2.5vw;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 20px;
+}
+
+nav ul li {
+  font-weight: bold;
+}
+
+.icono {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vw;
+  width: 5vw;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease;
+}
+
+.icono:hover {
+  background-color: #e0e0e0;
+}
+
+.cuadradoPrincipal {
+  height: 100vh;
+  width: 100%;
+  background-image: url(assets/interior-sala-cocina-dibujos-animados-casa-fondo-vectorial-refrigerador-muebles-cocina-dentro-casa-acogedor-apartamento-armario-modular-refrigerador-cocina-equipo-hervidor_107791-23665.avif);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedorInicio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 40px;
+  grid-template-areas: "contenedor1 contenedor2" "contenedor3 contenedor4";
+  width: fit-content;
+  height: fit-content;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+  overflow: auto;
+  justify-items: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.contenedorInicio_1 {
+  grid-area: contenedor1;
+  background-image: url(assets/quienes_somos.png);
+  background-size: cover;
+  border-radius: 15px;
+  width: 15vw;
+  height: 15vw;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+  background-color: skyblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedorInicio_2 {
+  grid-area: contenedor2;
+  background-image: url(assets/horse_2328554.png);
+  background-size: cover;
+  border-radius: 15px;
+  width: 15vw;
+  height: 15vw;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+  background-color: greenyellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedorInicio_3 {
+  grid-area: contenedor3;
+  background-image: url(assets/french-fries_605302.png);
+  background-size: cover;
+  border-radius: 15px;
+  width: 15vw;
+  height: 15vw;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+  background-color: greenyellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedorInicio_4 {
+  grid-area: contenedor4;
+  background-image: url(assets/contact_4838927.png);
+  background-size: cover;
+  border-radius: 15px;
+  width: 15vw;
+  height: 15vw;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+  background-color: skyblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedorInicio_1:hover,
+.contenedorInicio_2:hover,
+.contenedorInicio_3:hover,
+.contenedorInicio_4:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.botonInvisible {
+  width: 15vw;
+  height: 15vw;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#bienvenidos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 20px;
+  grid-template-areas: "titulo titulo" "parrafo parrafo2";
+  width: 80vw;
+  height: fit-content;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+  overflow: auto;
+}
+
+.titulo {
+  font-size: 2.5vw;
+  font-weight: bold;
+  text-align: center;
+  justify-self: center;
+  margin-top: 20px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 15px;
+  width: fit-content;
+  height: fit-content;
+  text-transform: uppercase;
+  grid-area: titulo;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.titulo:hover {
+  color: #4CAF50;
+  transition: color 0.3s ease;
+  transition: transform 0.3s ease;
+  transform: scale(1.05);
+}
+
+.parrafo {
+  font-size: 1vw;
+  text-align: justify;
+  margin: 20px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 15px;
+  grid-area: parrafo;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+  height: fit-content;
+}
+
+.parrafo2 {
+  font-size: 1vw;
+  text-align: justify;
+  margin: 20px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 15px;
+  grid-area: parrafo2;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+  height: fit-content;
+}
+
+.parrafo:hover {
+  color: #4CAF50;
+  transition: color 0.3s ease;
+  transition: transform 0.3s ease;
+  transform: scale(1.05);
+}
+
+.parrafo2:hover {
+  color: #4CAF50;
+  transition: color 0.3s ease;
+  transition: transform 0.3s ease;
+  transform: scale(1.05);
+}
+
+#contenedorReceta {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding: 20px;
+  grid-template-areas: "titulo titulo titulo" "descripcion descripcion imagen" "ingredientes preparacion preparacion";
+  width: 80vw;
+  height: 40vw;
+  border-radius: 15px;
+  gap: 50px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+  overflow: auto;
+  margin: 20px auto;
+}
+
+.titulo {
+  font-size: 2.5vw;
+  font-weight: bold;
+  text-align: center;
+  justify-self: center;
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 15px;
+  width: fit-content;
+  height: fit-content;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  grid-area: titulo;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.titulo:hover {
+  color: #4CAF50;
+  transition: color 0.3s ease;
+  transition: transform 0.3s ease;
+  transform: scale(1.05);
+}
+
+.ingredientes {
+  font-size: 1vw;
+  text-align: justify;
+  margin: 20px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  grid-area: ingredientes;
+  height: fit-content;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.ingredientes:hover {
+  color: #4CAF50;
+  transition: color 0.3s ease;
+  transition: transform 0.3s ease;
+  transform: scale(1.05);
+}
+
+.pasos {
+  font-size: 1vw;
+  text-align: justify;
+  margin: 20px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  grid-area: preparacion;
+  height: fit-content;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.pasos:hover {
+  color: #4CAF50;
+  transition: color 0.3s ease;
+  transition: transform 0.3s ease;
+  transform: scale(1.05);
+}
+
+.imagenReceta {
+  width: 100%;
+  height: 200%;
+  border-radius: 15px;
+  grid-area: imagen;
+}
+
+.imagenReceta img {
+  width: 40%;
+  height: 40%;
+  border-radius: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.imagenReceta:hover img {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.descripcion {
+  font-size: 1vw;
+  text-align: center;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  grid-area: descripcion;
+  height: fit-content;
+}
+
+.descripcion:hover {
+  color: #4CAF50;
+  transition: color 0.3s ease;
+  transition: transform 0.3s ease;
+  transform: scale(1.05);
+}
+
+.contenedorForm {
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  flex-direction: column;
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+  overflow: auto;
+}
+
+#contacto {
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 2vw;
+  margin-bottom: 20px;
+}
+
+.datosPersonales {
+  font-size: 1.5vw;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 20vw;
+  height: 3vw;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 10vw;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+textarea {
+  width: 20vw;
+  height: 10vw;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+footer {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  height: fit-content;
+  background-color: beige;
+  justify-items: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 10px;
+}
+
+footer p {
+  font-size: 0.8vw;
+  color: black;
+  margin: 10px;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer .icono {
+  margin-left: 70px;
+}
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  footer .icono {
+    text-align: center;
+    margin: auto;
+  }
+  #contenedorReceta {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    height: auto;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+  }
+  .contenedorForm {
+    width: 90vw;
+    height: auto;
+    padding: 20px;
+  }
+  input[type=submit] {
+    height: 12vw;
+    width: 20vw;
+  }
+  #bienvenidos {
+    width: 110vw;
+    height: auto;
+    padding: 20px;
+    grid-template-areas: "titulo" "parrafo" "parrafo2";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+  .titulo {
+    font-size: 2vw;
+    margin-top: 10px;
+  }
+  .parrafo, .parrafo2 {
+    font-size: 2vw;
+    margin: 10px;
+  }
+  .pasos, .ingredientes {
+    font-size: 2vw;
+    margin: 10px;
+  }
+  .ingredientes, .pasos {
+    width: 90vw;
+  }
+  .descripcion {
+    font-size: 2vw;
+    width: 80vw;
+    padding: 3px;
+  }
+  #contenedorReceta {
+    gap: 2px;
+    height: fit-content;
+    width: 110vw;
+    padding: 5px;
+  }
+  .contenedorForm {
+    width: 90vw;
+    height: 100vw;
+    padding: 20px;
+  }
+  textarea {
+    width: 60vw;
+    height: 20vw;
+  }
+  .datosPersonales {
+    font-size: 5vw;
+    margin-bottom: 10px;
+  }
+  #contacto {
+    font-size: 5vw;
+    margin-bottom: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
