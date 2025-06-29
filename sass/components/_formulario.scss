@@ -1,4 +1,4 @@
-.contenedorForm{
+@mixin contenedorForm {
     background-color: rgba(255, 255, 255, 0.8);
     display: flex;
     justify-content: center;
@@ -11,19 +11,13 @@
     overflow: auto;
 }
 
-#contacto{
+@mixin contacto {
     text-decoration: underline;
     font-weight: bold;
     font-size: 2vw;
     margin-bottom: 20px;    
 }
-
-.datosPersonales{
-    font-size: 1.5vw;
-    margin-bottom: 10px;
-}
-
-input{
+@mixin input {
     width: 20vw;
     height: 3vw;
     margin-bottom: 10px;
@@ -32,7 +26,7 @@ input{
     border: 1px solid #ccc;
 }
 
-input[type="submit"]{
+@mixin inputSubmit {
     background-color: #4CAF50;
     color: white;
     border: none;
@@ -40,15 +34,36 @@ input[type="submit"]{
     width: 10vw;
 }
 
-input[type="submit"]:hover{
-    background-color: #45a049;
-}
-
-textarea{
+@mixin textarea {
     width: 20vw;
     height: 10vw;
     padding: 5px;
     border-radius: 5px;
     border: 1px solid #ccc;
     resize: none;
+}
+
+.contenedorForm{
+    @include contenedorForm;
+
+    #contacto{
+        @include contacto;
+    }
+    .datosPersonales {
+        font-size: 1.5vw;
+        margin-bottom: 10px;
+    }
+    input { 
+        @include input;
+    }
+    input[type="submit"] {
+        @include inputSubmit;
+    }
+    input[type="submit"]:hover{
+        background-color: #45a049;
+    }
+    textarea {
+        @include textarea;
+    }
+
 }
