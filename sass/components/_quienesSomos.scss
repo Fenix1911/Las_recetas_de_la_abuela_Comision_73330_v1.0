@@ -1,4 +1,4 @@
-#bienvenidos{
+@mixin bienvenidos {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -13,8 +13,7 @@
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
     overflow: auto;
 }
-    
-.titulo{
+@mixin titulo {
     font-size: 2.5vw;
     font-weight: bold;
     text-align: center;
@@ -30,15 +29,7 @@
     grid-area: titulo;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
 }
-
-.titulo:hover{
-    color: #4CAF50;
-    transition: color 0.3s ease;
-    transition: transform 0.3s ease;
-    transform: scale(1.05);
-}
-
-.parrafo{
+@mixin parrafo{
     font-size: 1vw;
     text-align: justify;
     margin: 20px;
@@ -50,8 +41,7 @@
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
     height: fit-content;
 }
-
-.parrafo2{
+@mixin parrafo2{
     font-size: 1vw;
     text-align: justify;
     margin: 20px;
@@ -64,16 +54,42 @@
     height: fit-content;
 }
 
-.parrafo:hover{
-    color: #4CAF50;
-    transition: color 0.3s ease;
-    transition: transform 0.3s ease;
-    transform: scale(1.05);
-}
 
-.parrafo2:hover{
-    color: #4CAF50;
-    transition: color 0.3s ease;
-    transition: transform 0.3s ease;
-    transform: scale(1.05);
+
+#bienvenidos{
+    @include bienvenidos;
+    .titulo{
+        @include titulo;
+    }
+    .titulo:hover{
+        color: #4CAF50;
+        transition: color 0.3s ease;
+        transition: transform 0.3s ease;
+        transform: scale(1.05);
+    }
+    .parrafo{
+        @include parrafo;
+    }
+    .parrafo2{
+        @include parrafo2;
+    }
+    .parrafo:hover{
+        color: #4CAF50;
+        transition: color 0.3s ease;
+        transition: transform 0.3s ease;
+        transform: scale(1.05);
+    }
+
+    .parrafo2:hover{
+        color: #4CAF50;
+        transition: color 0.3s ease;
+        transition: transform 0.3s ease;
+        transform: scale(1.05);
+    }
 }
+    
+
+
+
+
+

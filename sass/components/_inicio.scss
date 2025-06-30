@@ -1,4 +1,4 @@
-.contenedorInicio{
+@mixin contenedorInicio{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -15,9 +15,8 @@
     justify-items: center;
     align-items: center;
     gap: 40px;
-    
 }
-.contenedorInicio_1 {
+@mixin contenedorInicio_1{
     grid-area: contenedor1;
     background-image: url(assets/quienes_somos.png);
     background-size: cover;
@@ -30,9 +29,7 @@
     justify-content: center;
     align-items: center;
 }
-
-
-.contenedorInicio_2 {
+@mixin contenedorInicio_2{
     grid-area: contenedor2;
     background-image: url(assets/horse_2328554.png);
     background-size: cover;
@@ -45,8 +42,7 @@
     justify-content: center;
     align-items: center;
 }
-
-.contenedorInicio_3 {
+@mixin contenedorInicio_3{
     grid-area: contenedor3;
     background-image: url(assets/french-fries_605302.png);
     background-size: cover;
@@ -59,8 +55,7 @@
     justify-content: center;
     align-items: center;
 }
-
-.contenedorInicio_4 {
+@mixin contenedorInicio_4 {
     grid-area: contenedor4;
     background-image:url(assets/contact_4838927.png);
     background-size: cover;
@@ -74,18 +69,37 @@
     align-items: center;
 }
 
-.contenedorInicio_1:hover,
-.contenedorInicio_2:hover,
-.contenedorInicio_3:hover,
-.contenedorInicio_4:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
-}
-
-.botonInvisible {
+.contenedorInicio{
+    @include contenedorInicio;
+    .contenedorInicio_1 {
+        @include contenedorInicio_1;
+    }
+    .contenedorInicio_2 {
+        @include contenedorInicio_2;
+    }
+    .contenedorInicio_3 {
+        @include contenedorInicio_3;
+    }
+    .contenedorInicio_4 {
+        @include contenedorInicio_4;
+    }
+    .contenedorInicio_1:hover,
+    .contenedorInicio_2:hover,
+    .contenedorInicio_3:hover,
+    .contenedorInicio_4:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+    .botonInvisible {
     width: 15vw;
     height: 15vw;
     background-color: transparent;
     border: none;
     cursor: pointer;
+    }
 }
+
+
+
+
+
