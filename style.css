@@ -258,7 +258,6 @@ nav ul li {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 10px;
   border-radius: 15px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   grid-area: ingredientes;
   height: fit-content;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
@@ -277,7 +276,6 @@ nav ul li {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 10px;
   border-radius: 15px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   grid-area: preparacion;
   height: fit-content;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
@@ -310,7 +308,7 @@ nav ul li {
   color: black;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 15px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
   margin-top: 10px;
   grid-area: descripcion;
   height: fit-content;

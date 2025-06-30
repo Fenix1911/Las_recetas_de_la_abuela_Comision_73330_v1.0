@@ -1,3 +1,5 @@
+$background-primary:rgba(255, 255, 255, 0.8);
+$shadow-primary:0px 4px 6px rgba(0, 0, 0, 0.5);
 @mixin bienvenidos {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -8,9 +10,9 @@
         "parrafo parrafo2";
     width: 80vw;
     height: fit-content;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: $background-primary;
     border-radius: 15px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    box-shadow:$shadow-primary;
     overflow: auto;
 }
 @mixin titulo {
@@ -20,25 +22,25 @@
     justify-self: center;
     margin-top: 20px;
     color: black;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: $background-primary;
     padding: 10px;
     border-radius: 15px;
     width: fit-content;
     height: fit-content;
     text-transform: uppercase;
     grid-area: titulo;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    box-shadow: $shadow-primary;
 }
 @mixin parrafo{
     font-size: 1vw;
     text-align: justify;
     margin: 20px;
     color: black;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: $background-primary;
     padding: 10px;
     border-radius: 15px;
     grid-area: parrafo;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    box-shadow: $shadow-primary;
     height: fit-content;
 }
 @mixin parrafo2{
@@ -46,11 +48,11 @@
     text-align: justify;
     margin: 20px;
     color: black;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: $background-primary;
     padding: 10px;
     border-radius: 15px;
     grid-area: parrafo2;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    box-shadow: $shadow-primary;
     height: fit-content;
 }
 

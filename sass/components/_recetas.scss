@@ -1,3 +1,6 @@
+$background-primary:rgba(255, 255, 255, 0.8);
+$shadow-primary:0px 4px 6px rgba(0, 0, 0, 0.5);
+
 @mixin contenedorReceta{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -11,8 +14,8 @@
     height: 40vw;
     border-radius: 15px;
     gap: 50px;
-    background-color: rgba(255, 255, 255, 0.8);
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    background-color: $background-primary;
+    box-shadow: $shadow-primary;
     overflow: auto;
     margin: 20px auto;
 }
@@ -22,7 +25,7 @@
     text-align: center;
     justify-self: center;
     margin-top: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: $background-primary;
     padding: 10px;
     border-radius: 15px;
     width: fit-content;
@@ -30,42 +33,40 @@
     text-transform: uppercase;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     grid-area: titulo;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    box-shadow: $shadow-primary;
 }
 @mixin ingredientes {
     font-size: 1vw;
     text-align: justify;
     margin: 20px;
     color: black;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: $background-primary;
     padding: 10px;
     border-radius: 15px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     grid-area: ingredientes;
     height: fit-content;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    box-shadow: $shadow-primary;
 }
 @mixin pasos{
     font-size: 1vw;
     text-align: justify;
     margin: 20px;
     color: black;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: $background-primary;
     padding: 10px;
     border-radius: 15px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     grid-area: preparacion;
     height: fit-content;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    box-shadow: $shadow-primary;
 }
 
 @mixin descripcion{
     font-size: 1vw;
     text-align: center;
     color: black;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: $background-primary;
     border-radius: 15px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: $shadow-primary;
     margin-top: 10px;
     grid-area: descripcion;
     height: fit-content;
@@ -113,7 +114,7 @@
         width: 40%;
         height: 40%;
         border-radius: 15px;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+        box-shadow: $shadow-primary;
     }
     .imagenReceta:hover img{
         transform: scale(1.1);
