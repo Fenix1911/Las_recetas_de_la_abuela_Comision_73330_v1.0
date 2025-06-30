@@ -1,3 +1,11 @@
+@keyframes rotar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 nav.bg-body-tertiary {
   z-index: 10000;
   background-color: beige !important;
@@ -35,6 +43,7 @@ nav ul li {
 
 .icono:hover {
   background-color: #e0e0e0;
+  animation: rotar 2s linear infinite;
 }
 
 .cuadradoPrincipal {
