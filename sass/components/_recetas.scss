@@ -77,10 +77,10 @@ $shadow-primary:0px 4px 6px rgba(0, 0, 0, 0.5);
 
 #contenedorReceta{
     @include contenedorReceta;
-    .titulo{
+    .tituloReceta{
         @include titulo;
     }
-    .titulo:hover{
+    .tituloReceta:hover{
         color: #4CAF50;
         transition: color 0.3s ease;
         transition: transform 0.3s ease;
