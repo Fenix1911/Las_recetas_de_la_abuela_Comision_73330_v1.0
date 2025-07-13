@@ -12,9 +12,11 @@ $shadow-primary:0px 4px 6px rgba(0, 0, 0, 0.5);
     padding: 10px;
 }
 
+.contenedorFooter {
+    @include footer;
+}
 
 footer {
-    @include footer;
     p {
         font-size: 0.8vw;
         color: black;

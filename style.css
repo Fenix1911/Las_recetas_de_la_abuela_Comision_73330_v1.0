@@ -369,7 +369,7 @@ nav ul li {
   resize: none;
 }
 
-footer {
+.contenedorFooter {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
@@ -380,6 +380,7 @@ footer {
   flex-wrap: nowrap;
   padding: 10px;
 }
+
 footer p {
   font-size: 0.8vw;
   color: black;
