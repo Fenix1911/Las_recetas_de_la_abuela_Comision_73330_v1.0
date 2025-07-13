@@ -399,7 +399,7 @@ footer .icono {
 }
 
 @media (max-width: 768px) {
-  footer {
+  .contenedorFooter {
     flex-direction: column;
     align-items: center;
     justify-content: center;
